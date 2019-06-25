@@ -1,0 +1,8 @@
+<h1>ngSwitch</h1>
+<div [ngSwitch]="numero % 3">
+  <p *ngSwitchCase="0">[0] Resto da divisão de {{numero}} por 3</p>
+  <p *ngSwitchCase="1">[1] Resto da divisão de {{numero}} por 3</p>
+  <p *ngSwitchCase="2">[2] Resto da divisão de {{numero}} por 3</p>
+</div>
+
+<button	(click)="incrementarNumero()">Incrementar número</button>
